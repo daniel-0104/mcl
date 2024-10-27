@@ -8,6 +8,7 @@ html,body{
     --light-gray: #f1f1f181;
     --purple: #7e98ff;
     --drak-green: rgb(43, 57, 59);
+    --light-blue: #2788ab;
 }
 
 /*.......................................... nav bar start ................................... */
@@ -31,7 +32,7 @@ html,body{
     font-size: 10pt;
 }
 .nav-link.active{
-    color: var(--teal) !important;
+    color: var(--light-blue) !important;
 }
 #nav-order > li > a{
     color: black;
@@ -43,7 +44,7 @@ html,body{
 #nav-order > li > a:hover,
 .nav-item a i:hover,
 .nav-item button:hover{
-    color: var(--teal) !important;
+    color: var(--light-blue) !important;
 }
 .navbar-toggler{
     border: none;
@@ -221,3 +222,32 @@ html,body{
     }
 }
 /*.......................................... home end ................................... */
+
+
+/*.......................................... price plan start ................................... */
+#price-plan{
+    margin: 80px 0;
+    text-align: center;
+}
+#price-plan > div > h3{
+    font-weight: 700;
+    color: var(--light-blue);
+}
+.plan-content{
+    color: white;
+    background: linear-gradient(to right, #324079, #1C253A);
+    padding: 10px 0;
+    border-radius: 20px;
+}
+.plan-content label{
+    font-size: 16pt;
+}
+.plan-content h3{
+    font-weight: bold;
+    margin-top: 10px;
+}
+.plan-content ul{
+    text-align: left;
+    list-style: none;
+}
+/*.......................................... price plan end ................................... */
