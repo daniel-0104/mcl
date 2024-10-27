@@ -81,11 +81,11 @@ html,body{
 /*.......................................... footer start ................................... */
 #footer{
     width: 100%;
-    background-color: rgb(246, 246, 246);
+    background-color: rgb(242, 241, 241);
     color: black;
     padding: 15px 25px 0;
     bottom: 0 !important;
-    border-top: 1px solid rgba(0, 0, 0, 0.315);
+    border-top: 1px solid rgba(29, 28, 28, 0.315);
 }
 @media screen and (max-width: 621px){
     #footer > div{
@@ -300,3 +300,46 @@ html,body{
     }
 }
 /*.......................................... price plan end ................................... */
+
+
+/*.......................................... service title start ................................... */
+#service-title{
+    margin: 60px auto;
+    width: 70%;
+    text-align: left;
+}
+#service-title > h1{
+    text-transform: uppercase;
+    color: var(--drak-green);
+    font-weight: bold;
+}
+#service-title > p{
+    margin-top: 15px;
+    word-spacing: 1px;
+    font-size: 13pt;
+}
+#service-title > div > label{
+    margin-top: 60px;
+    font-weight: 400;
+}
+#service-title img{
+    object-fit: cover;
+    height: 80px !important;
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 767px){
+    #service-title > h1{
+        margin-top: -10px;
+        font-size: 18pt;
+    }
+    #service-title > p{
+        margin-top: 15px;
+        word-spacing: 1px;
+        font-size: 10pt;
+    }
+    #service-title > div > label{
+        margin-top: 40px;
+        font-size: 9pt;
+    }
+}
+/*.......................................... service title end ................................... */
