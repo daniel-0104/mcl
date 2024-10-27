@@ -203,16 +203,20 @@ html,body{
         height: 35vh;
     }
     #home-content{
-        top: 12%;
+        top: 11%;
+    }
+    #home-content h1{
+        font-size: 12pt;
+        font-weight: bolder;
     }
     #home-content p{
-        font-size: 7pt;
+        font-size: 8pt;
         line-height: 17px;
         word-spacing: 0;
     }
     #contact{
         margin-top: 0;
-        font-size: 7pt;
+        font-size: 8pt;
     }
 }
 /*.......................................... home end ................................... */
