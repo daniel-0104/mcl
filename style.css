@@ -81,10 +81,11 @@ html,body{
 /*.......................................... footer start ................................... */
 #footer{
     width: 100%;
-    background-color: rgb(59, 59, 59);
-    color: white;
+    background-color: rgb(246, 246, 246);
+    color: black;
     padding: 15px 25px 0;
     bottom: 0 !important;
+    border-top: 1px solid rgba(0, 0, 0, 0.315);
 }
 @media screen and (max-width: 621px){
     #footer > div{
@@ -229,25 +230,70 @@ html,body{
     margin: 80px 0;
     text-align: center;
 }
-#price-plan > div > h3{
+#price-plan > div > h2{
     font-weight: 700;
     color: var(--light-blue);
 }
 .plan-content{
     color: white;
-    background: linear-gradient(to right, #324079, #1C253A);
-    padding: 10px 0;
+    background-image: linear-gradient(to right top, #324079, #2e3d6e, #2a3962, #283556, #26314b);
+    padding: 15px 0 10px;
     border-radius: 20px;
 }
-.plan-content label{
-    font-size: 16pt;
+.plan-content span:first-child{
+    font-size: 17pt;
 }
-.plan-content h3{
+.plan-content span:last-child{
+    color: rgba(248, 248, 248, 0.709);
+}
+.plan-content h2{
     font-weight: bold;
-    margin-top: 10px;
+    margin: 10px auto;
 }
 .plan-content ul{
     text-align: left;
     list-style: none;
+}
+#starter-plan .plan-content{
+    width: 420px;
+}
+@media screen and (max-width: 991px){
+    #starter-plan{
+        margin-left: 10px;
+    }
+}
+@media screen and (max-width: 767px){
+    #price-plan .col-lg-4{
+        width: 350px;
+    }
+    #price-plan > div:first-child{
+        padding: 0 !important;
+    }
+    #price-plan > div > h2{
+        font-size: 16pt;
+    }
+    #price-plan > div > p{
+        font-size: 11pt;
+    }
+    .plan-content span:first-child{
+        font-size: 14pt;
+    }
+    .plan-content span:last-child,
+    .plan-content ul{
+        font-size: 10pt;
+    }
+    .plan-content h2{
+        font-size: 17pt;
+    }
+}
+@media screen and (max-width: 445px){
+    #starter-plan{
+        width: 100%;
+        margin-left: 0 !important;
+    }
+    #starter-plan .plan-content{
+        width: 350px;
+        margin: auto;
+    }
 }
 /*.......................................... price plan end ................................... */
