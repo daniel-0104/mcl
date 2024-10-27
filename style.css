@@ -91,9 +91,7 @@ html,body{
     #footer > div{
         display: block !important;
         text-align: center;
-    }
-    #developer{
-        display: none !important;
+        font-size: 10pt;
     }
 }
 /*.......................................... footer end ................................... */
@@ -339,7 +337,7 @@ html,body{
     }
     #service-title > div > label{
         margin-top: 40px;
-        font-size: 9pt;
+        font-size: 10pt;
     }
 }
 /*.......................................... service title end ................................... */
