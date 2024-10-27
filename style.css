@@ -212,11 +212,12 @@ html,body{
     #home-content p{
         font-size: 8pt;
         line-height: 17px;
-        word-spacing: 0;
+        word-spacing: 1px;
     }
     #contact{
         margin-top: 0;
         font-size: 8pt;
+        padding-top: 8px;
     }
 }
 /*.......................................... home end ................................... */
