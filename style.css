@@ -166,6 +166,7 @@ html,body{
     #logo-img{
         width: 110px;
         height: 40px;
+        margin-left: -10px;
     }
     #nav-order > li > a{
         font-size: 11pt;
@@ -183,6 +184,7 @@ html,body{
     }
     #home-content h1{
         font-size: 11pt;
+        font-weight: bolder;
     }
     #home-content p{
         font-size: 8pt;
@@ -207,6 +209,10 @@ html,body{
         font-size: 7pt;
         line-height: 17px;
         word-spacing: 0;
+    }
+    #contact{
+        margin-top: 0;
+        font-size: 7pt;
     }
 }
 /*.......................................... home end ................................... */
