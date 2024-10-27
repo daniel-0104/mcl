@@ -295,5 +295,8 @@ html,body{
         width: 350px;
         margin: auto;
     }
+    #starter-plan ul .pe-5{
+        padding-right: 18px !important;
+    }
 }
 /*.......................................... price plan end ................................... */
