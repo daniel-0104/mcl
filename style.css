@@ -1,0 +1,212 @@
+html,body{
+    color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+:root{
+    --light-gray: #f1f1f181;
+    --purple: #7e98ff;
+    --drak-green: rgb(43, 57, 59);
+}
+
+/*.......................................... nav bar start ................................... */
+#logo-img{
+    display: block;
+    width: 170px;
+    height: 60px;
+    object-fit: cover;
+}
+.navbar{
+    background-color: white;
+}
+#navbarNav{
+    justify-content: right;
+}
+#login-btn{
+    color: white !important;
+    background-color: var(--purple);
+    border-radius: 20px;
+    padding: 8px 20px;
+    font-size: 10pt;
+}
+.nav-link.active{
+    color: var(--teal) !important;
+}
+#nav-order > li > a{
+    color: black;
+    padding: 8px 30px;
+    margin: 0 10px;
+    font-size: 12pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#nav-order > li > a:hover,
+.nav-item a i:hover,
+.nav-item button:hover{
+    color: var(--teal) !important;
+}
+.navbar-toggler{
+    border: none;
+    color: black !important;
+    box-shadow: none;
+    outline: 0;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+@media screen and (max-width: 767px){
+    #nav-icon{
+        display: flex;
+    }
+    .navbar-nav li{
+        padding: 8px 0;
+    }
+    #nav-icon{
+        border-top: 1px solid rgb(242, 240, 240);
+        padding-left: 20px;
+        padding-top: 15px;
+        margin: 10px 0;
+    }
+}
+@media screen and (min-width: 768px) and (max-width: 992px){
+    #nav-order > li > a{
+        margin: 0;
+        padding:0 20px;
+    }
+}
+/*.......................................... nav bar end ................................... */
+
+
+/*.......................................... footer start ................................... */
+#footer{
+    width: 100%;
+    background-color: rgb(59, 59, 59);
+    color: white;
+    padding: 15px 25px 0;
+    bottom: 0 !important;
+}
+@media screen and (max-width: 621px){
+    #footer > div{
+        display: block !important;
+        text-align: center;
+    }
+    #developer{
+        display: none !important;
+    }
+}
+/*.......................................... footer end ................................... */
+
+
+/*.......................................... home start ................................... */
+#home > div,
+#home img{
+    position: relative;
+}
+#home-content{
+    position: absolute;
+    top: 15%;
+    left: 6%;
+    width: 55%;
+}
+#home-content h1{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--drak-green);
+}
+#home-content p{
+    margin-top: 15px;
+    line-height: 30px;
+    word-spacing: 1px;
+}
+#contact{
+    margin-top: 30px;
+    background-color: var(--purple);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 992px){
+    #home-content{
+        position: absolute;
+        top: 10%;
+        width: 70%;
+    }
+    #home-content h1{
+        font-size: 19pt;
+    }
+    #home-content p{
+        margin-top: 13px;
+        line-height: 25px;
+        word-spacing: 1px;
+    }
+    #contact{
+        margin-top: 18px;
+        font-size: 10pt;
+    }
+}
+@media screen and (max-width: 753px){
+    #home-content{
+        position: absolute;
+        width: 80%;
+    }
+    #home-content h1{
+        font-size: 15pt;
+    }
+    #home-content p{
+        font-size: 10pt;
+        line-height: 23px;
+    }
+    #contact{
+        margin-top: 5px;
+        padding: 10px 20px;
+        font-size: 9pt;
+    }
+    #logo-img{
+        width: 110px;
+        height: 40px;
+    }
+    #nav-order > li > a{
+        font-size: 11pt;
+    }
+    #login-btn{
+        font-size: 9pt;
+        padding: 8px 25px;
+    }
+}
+@media screen and (max-width: 650px){
+    #home-content{
+        position: absolute;
+        width: 90%;
+        top: 8%;
+    }
+    #home-content h1{
+        font-size: 11pt;
+    }
+    #home-content p{
+        font-size: 8pt;
+        line-height: 20px;
+        word-spacing: 0;
+    }
+    #contact{
+        margin-top: 0;
+        padding: 5px 15px;
+        font-size: 6pt;
+    }
+}
+@media screen and (max-width: 467px){
+    #home img{
+        object-fit: cover;
+        height: 35vh;
+    }
+    #home-content{
+        top: 12%;
+    }
+    #home-content p{
+        font-size: 7pt;
+        line-height: 17px;
+        word-spacing: 0;
+    }
+}
+/*.......................................... home end ................................... */
