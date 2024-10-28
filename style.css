@@ -308,13 +308,16 @@ html,body{
     text-align: left;
 }
 #service-title > h1,
-#contact-us > h1{
+#contact-us > h1,
+.stand-for > h3,
+.mission > h3{
     text-transform: uppercase;
     color: var(--drak-green);
     font-weight: bold;
 }
 #service-title > p,
-#contact-us > p{
+#contact-us > p,
+.stand-for > p{
     margin-top: 15px;
     word-spacing: 1px;
     font-size: 13pt;
@@ -329,13 +332,22 @@ html,body{
     margin-bottom: 15px;
 }
 @media screen and (max-width: 767px){
+    #service-title,
+    #contact-us,
+    .stand-for,
+    .mission{
+        margin: 60px auto;
+        width: 85%;
+        text-align: left;
+    }
     #service-title > h1,
     #contact-us > h1{
         margin-top: -10px;
         font-size: 18pt;
     }
     #service-title > p,
-    #contact-us > p{
+    #contact-us > p,
+    .stand-for > p{
         margin-top: 15px;
         word-spacing: 1px;
         font-size: 10pt;
@@ -344,8 +356,30 @@ html,body{
         margin-top: 40px;
         font-size: 10pt;
     }
+    .stand-for > h3,
+    .mission > h3{
+        margin-top: -10px;
+        font-size: 15pt;
+    }
+    .mission .row h5{
+        font-size: 13pt;
+    }
+    .mission .row p{
+        font-size: 10pt;
+    }
 }
 /*.......................................... service title end ................................... */
+
+
+/*.......................................... about us start ................................... */
+.stand-for,
+.mission{
+    margin: 60px auto 90px;
+}
+.mission .row h5{
+    color: var(--light-blue);
+}
+/*.......................................... about us end ................................... */
 
 
 /*.......................................... contact us start ................................... */
