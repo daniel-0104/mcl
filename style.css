@@ -301,17 +301,20 @@ html,body{
 
 
 /*.......................................... service title start ................................... */
-#service-title{
+#service-title,
+#contact-us{
     margin: 60px auto;
     width: 70%;
     text-align: left;
 }
-#service-title > h1{
+#service-title > h1,
+#contact-us > h1{
     text-transform: uppercase;
     color: var(--drak-green);
     font-weight: bold;
 }
-#service-title > p{
+#service-title > p,
+#contact-us > p{
     margin-top: 15px;
     word-spacing: 1px;
     font-size: 13pt;
@@ -326,11 +329,13 @@ html,body{
     margin-bottom: 15px;
 }
 @media screen and (max-width: 767px){
-    #service-title > h1{
+    #service-title > h1,
+    #contact-us > h1{
         margin-top: -10px;
         font-size: 18pt;
     }
-    #service-title > p{
+    #service-title > p,
+    #contact-us > p{
         margin-top: 15px;
         word-spacing: 1px;
         font-size: 10pt;
@@ -341,3 +346,70 @@ html,body{
     }
 }
 /*.......................................... service title end ................................... */
+
+
+/*.......................................... contact us start ................................... */
+#contact-content{
+    margin: 80px auto !important;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.209) 0px 2px 8px;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.form-group label{
+    color: rgb(94, 92, 92);
+}
+.form-control:focus{
+    box-shadow: none;
+    border: 1px solid var(--purple);
+}
+.form-group ::placeholder{
+    color: rgba(128, 128, 128, 0.682);
+}
+textarea{
+    resize: none;
+}
+#submit{
+    background-color: var(--purple);
+    color: white;
+    padding: 10px 20px;
+}
+@media screen and (max-width: 1200px){
+    #contact-content .col-lg-3{
+        padding-left: 18px !important; 
+    }
+    #contact-content .col-lg-3 > div{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px){
+    #contact-content .col-lg-3{
+        border-left: none !important;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.154);
+        padding-bottom: 30px;
+        margin-bottom: 40px;
+        font-size: 11pt;
+    }
+    #contact-content .col-lg-3 > h5,
+    #contact-content .col-lg-9 > h5{
+        font-size: 14pt !important;
+    }
+    #contact-content .col-lg-3 > div{
+        text-align: left;
+    }
+    .form-group label{
+        font-size: 11pt;
+    }
+    .form-group ::placeholder{
+        font-size: 10pt;
+    }
+    #contact-content{
+        padding: 30px 10px;
+    }
+    #submit{
+        width: 100%;
+        font-size: 11pt;
+        padding: 8px 20px;
+    }
+}
+/*.......................................... contact us end ................................... */
