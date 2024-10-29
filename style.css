@@ -384,6 +384,7 @@ html,body{
 .teams > div > h3{
     color: var(--drak-green);
     text-align: center;
+    font-weight: bold;
 }
 .teams .row img{
     width: 230px;
@@ -392,6 +393,7 @@ html,body{
     margin-bottom: 15px;
 }
 .teams .col-lg-3 h5{
+    font-family: Arial, Helvetica, sans-serif;
     color: var(--drak-green);
 }
 .teams .row label{
