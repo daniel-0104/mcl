@@ -393,7 +393,6 @@ html,body{
     margin-bottom: 15px;
 }
 .teams .col-lg-3 h5{
-    font-family: Arial, Helvetica, sans-serif;
     color: var(--drak-green);
 }
 .teams .row label{
@@ -405,7 +404,10 @@ html,body{
         text-align: center;
     }
     .teams .row img{
-        margin: 0 auto 15px;
+        margin: 0 auto 10px;
+    }
+    .teams .col-lg-3 h5{
+        margin-bottom: 0;
     }
 }
 /*.......................................... about us end ................................... */
