@@ -365,6 +365,7 @@ html,body{
         font-size: 13pt;
     }
     .mission .row p{
+        margin-top: 0 !important;
         font-size: 10pt;
     }
 }
@@ -373,11 +374,37 @@ html,body{
 
 /*.......................................... about us start ................................... */
 .stand-for,
-.mission{
+.mission,
+.teams{
     margin: 60px auto 90px;
 }
 .mission .row h5{
     color: var(--light-blue);
+}
+.teams > div > h3{
+    color: var(--drak-green);
+    text-align: center;
+}
+.teams .row img{
+    width: 230px;
+    height: 180px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.teams .col-lg-3 h5{
+    color: var(--drak-green);
+}
+.teams .row label{
+    color: rgb(94, 92, 92);
+    font-size: 11pt;
+}
+@media screen and (max-width: 575px){
+    .teams .row .p-3{
+        text-align: center;
+    }
+    .teams .row img{
+        margin: 0 auto 15px;
+    }
 }
 /*.......................................... about us end ................................... */
 
