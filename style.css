@@ -407,7 +407,11 @@ html,body{
         margin: 0 auto 10px;
     }
     .teams .col-lg-3 h5{
+        font-size: 14pt;
         margin-bottom: 0;
+    }
+    .teams .row label{
+        font-size: 10pt;
     }
 }
 /*.......................................... about us end ................................... */
