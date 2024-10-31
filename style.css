@@ -399,9 +399,11 @@ html,body{
     color: rgb(94, 92, 92);
     font-size: 11pt;
 }
-@media screen and (max-width: 575px){
-    .teams .row .p-3{
+@media screen and (max-width: 767px){
+    .teams .col-lg-3{
         text-align: center;
+        justify-content: center;
+        margin: auto;
     }
     .teams .row img{
         margin: 0 auto 10px;
@@ -410,6 +412,8 @@ html,body{
         font-size: 14pt;
         margin-bottom: 0;
     }
+}
+@media screen and (max-width: 575px){
     .teams .row label{
         font-size: 10pt;
     }
