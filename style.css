@@ -230,7 +230,7 @@ html,body{
 }
 #price-plan > div > h2{
     font-weight: 700;
-    color: var(--light-blue);
+    color: var(--purple);
 }
 .plan-content{
     color: white;
@@ -255,6 +255,43 @@ html,body{
 #starter-plan .plan-content{
     width: 420px;
 }
+
+#plan-expire{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    margin: 30px auto;
+    background-color: var(--purple);
+    padding: 5px 10px;
+    border-radius: 50px;
+}
+#plan-expire button{
+    padding: 8px 25px;
+    border-radius: 50px;
+    color: white;
+}
+#plan-expire button.text-active{
+    background-color: white;
+    padding: 8px 25px;
+    border-radius: 50px;
+    color: black;
+}
+#yearly-plan,
+#owner-plan{
+    display: none;
+}
+@media screen and (max-width: 470px){
+    #plan-expire{
+        padding: 5px 10px;
+    }
+    #plan-expire button{
+        font-size: 11pt;
+        padding: 3px 20px !important;
+    }
+}
+
+
 @media screen and (max-width: 991px){
     #starter-plan{
         margin-left: 10px;
@@ -272,6 +309,7 @@ html,body{
     }
     #price-plan > div > p{
         font-size: 11pt;
+        margin: auto 20px;
     }
     .plan-content span:first-child{
         font-size: 14pt;
