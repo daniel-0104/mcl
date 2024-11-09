@@ -281,6 +281,18 @@ html,body{
 #owner-plan{
     display: none;
 }
+
+.package-plan .plan-content > div{
+    height: 145px;
+}
+#cash-back > p{
+    color:rgb(204, 174, 252);
+    padding: 1px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-top: 13px;
+    box-shadow: 3px 0 2px rgba(255, 255, 255, 0.839);
+}
+
 @media screen and (max-width: 470px){
     #plan-expire{
         padding: 5px 10px;
@@ -295,6 +307,9 @@ html,body{
 @media screen and (max-width: 991px){
     #starter-plan{
         margin-left: 10px;
+    }
+    .package-plan .plan-content > div{
+        height: auto;
     }
 }
 @media screen and (max-width: 767px){
