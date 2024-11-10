@@ -566,11 +566,11 @@ textarea{
     #partner-company .row{
         display: grid;
         row-gap: 0;
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
     }
     #partner-company > div > h3,
     #web-case > div > h3{
-        font-size: 13pt;
+        font-size: 14pt;
     }
     #partner-company > div > p,
     #web-case > div > p{
@@ -600,7 +600,7 @@ textarea{
 #case-content .swiper .col-lg-4 p{
     font-size: 13px;
     margin-top: 15px;
-    color: rgba(0, 0, 0, 0.808);
+    color: rgba(0, 0, 0, 0.777);
 }
 #case-content .swiper a{
     text-decoration: none;
@@ -682,12 +682,12 @@ textarea{
         padding-left: 15px;
     }
     #case-content .swiper .col-lg-4 p{
-        font-size: 12px;
+        font-size: 11px;
         margin-top: 10px;
     }
     #case-content .swiper .col-lg-4 label{
         margin-top: 0;
-        font-size: 8pt;
+        font-size: 7pt;
     }
     #case-content .swiper-slide .row{
         background-color: var(--light-gray);
