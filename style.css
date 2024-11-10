@@ -571,7 +571,8 @@ textarea{
         grid-template-columns: repeat(3,1fr);
     }
     #partner-company > div > h3,
-    #web-case > div > h3{
+    #web-case > div > h3,
+    #review > h3{
         font-size: 15pt;
     }
     #partner-company > div > p,
@@ -708,9 +709,21 @@ textarea{
 
 /*..........................................review start ................................... */
 #review > h3{
+    display: flex;
+    align-items: center;
     color: var(--drak-green);
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 26pt;
+}
+#review > h3::after{
+    content: '';
+    width: 60%;
+    display: block;
+    background-color: var(--light-blue);
+    height: 2px;
+    border-radius: 50%;
+    margin-left: 20px;
 }
 #review .swiper-slide{
     background-color: var(--light-gray);
@@ -718,7 +731,8 @@ textarea{
     height: 350px;
     border-radius: 8px;
     color: rgb(83, 82, 82);
-    border: 1px solid var(--light-blue);
+    border: 1px solid rgba(0, 0, 0, 0.384);
+
 }
 #review .swiper-slide span{
     font-size: 10pt;
@@ -740,6 +754,10 @@ textarea{
     }
     #review .swiper-slide p{
         font-size: 10pt;
+    }
+    #review > h3::after{
+        width: 60%;
+        margin-left: 10px;
     }
 }
 /*..........................................review end ................................... */
