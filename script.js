@@ -39,3 +39,13 @@ function detailsClick(event,elementId){
   ownerPlan.style.display = elementId === 'ownerPlan' ? 'block' : 'none';
 }
 //........................................ category click end ................................
+
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+  grabCursor: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
