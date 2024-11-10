@@ -44,8 +44,37 @@ function detailsClick(event,elementId){
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
   grabCursor: true,
+  speed: 1000,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
+});
+
+var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  grabCursor: true,
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    0: {
+        slidesPerView: 1,
+    },
+    570: {
+        slidesPerView: 2,
+    },
+    880: {
+      slidesPerView: 3,
+    },
+    1300: {
+        slidesPerView: 4,
+    }
+  }
 });

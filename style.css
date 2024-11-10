@@ -545,8 +545,9 @@ textarea{
 
 /*.......................................... partner company start ................................... */
 #partner-company,
-#web-case{
-    margin: 90px auto 40px;
+#web-case,
+#review{
+    margin: 90px auto 100px;
 }
 #partner-company > div > h3,
 #web-case > div > h3{
@@ -555,12 +556,13 @@ textarea{
     color: var(--drak-green);
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 24pt;
+    font-size: 26pt;
 }
 #partner-company > div > p,
 #web-case > div > p{
     margin-top: 10px;
     color: var(--light-blue);
+    font-size: 14pt;
 }
 @media screen and (max-width: 575px){
     #partner-company .row{
@@ -577,6 +579,11 @@ textarea{
         margin-top: 8px;
         font-size: 10pt;
     }
+    #partner-company,
+    #web-case,
+    #review{
+        margin: 90px auto 40px;
+    }
 }
 /*.......................................... partner company end ................................... */
 
@@ -584,6 +591,7 @@ textarea{
 /*.......................................... web cases start ................................... */
 #case-content > a{
     margin-left: 80px;
+    text-align: right;
 }
 #case-content .swiper .col-lg-4{
     padding-left: 22px;
@@ -625,7 +633,7 @@ textarea{
 #case-content .swiper-slide .row{
     background-color: var(--light-gray);
     width: 90%;
-    height: 70%;
+    height: 100%;
 }
 #case-content .swiper-slide img {
     display: block;
@@ -696,3 +704,42 @@ textarea{
     }
 }
 /*.......................................... web cases end ................................... */
+
+
+/*..........................................review start ................................... */
+#review > h3{
+    color: var(--drak-green);
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+}
+#review .swiper-slide{
+    background-color: var(--light-gray);
+    padding: 20px;
+    height: 350px;
+    border-radius: 8px;
+    color: rgb(83, 82, 82);
+    border: 1px solid var(--light-blue);
+}
+#review .swiper-slide span{
+    font-size: 10pt;
+}
+#review .swiper-slide p{
+    margin-top: 20px;
+    font-size: 11pt;
+}
+#review .swiper-wrapper{
+    padding-bottom: 40px;
+}
+#review .swiper-pagination-bullet-active{
+    background-color: var(--light-blue);
+    opacity: 1;
+}
+@media screen and (max-width: 575px){
+    #review > h3{
+        font-size: 16pt;
+    }
+    #review .swiper-slide p{
+        font-size: 10pt;
+    }
+}
+/*..........................................review end ................................... */
