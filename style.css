@@ -571,8 +571,7 @@ textarea{
         grid-template-columns: repeat(3,1fr);
     }
     #partner-company > div > h3,
-    #web-case > div > h3,
-    #review > h3{
+    #web-case > div > h3{
         font-size: 15pt;
     }
     #partner-company > div > p,
@@ -750,7 +749,7 @@ textarea{
 }
 @media screen and (max-width: 575px){
     #review > h3{
-        font-size: 16pt;
+        font-size: 15pt;
     }
     #review .swiper-slide p{
         font-size: 10pt;
