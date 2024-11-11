@@ -225,12 +225,14 @@ html,body{
 
 /*.......................................... price plan start ................................... */
 #price-plan{
-    margin: 80px 0;
+    margin: 40px 0 80px;
     text-align: center;
 }
 #price-plan > div > h2{
-    font-weight: 700;
-    color: var(--purple);
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--drak-green);
+    font-size: 26pt;
 }
 .plan-content{
     color: white;
@@ -779,8 +781,9 @@ textarea{
     text-transform: uppercase;
     color: var(--drak-green);
     font-weight: bold;
+    width: 60%;
 }
-#cases-title > h1::after{
+/* #cases-title > h1::after{
     content: '';
     width: 60%;
     display: block;
@@ -788,19 +791,20 @@ textarea{
     height: 5px;
     border-radius: 50%;
     margin-left: 20px;
-}
+} */
 #case-category{
-    margin-top: 60px;
+    margin-top: 50px;
 }
 #case-category a{
     text-decoration: none;
+    margin-bottom: 10px;
 }
 #case-category button{
     background-color: rgba(233, 233, 233, 0.856);
     border-radius: 30px;
     margin-right: 10px;
     color: rgba(0, 0, 0, 0.747);
-    padding: 8px 20px;
+    padding: 8px 25px;
 }
 #case-category .category-link button.active,
 #case-category button:hover{
@@ -808,7 +812,7 @@ textarea{
     color: white !important;
 }
 #project-cases{
-    margin-top: 40px;
+    margin-top: 30px;
 }
 #project-cases .col-lg-4{
     padding-left: 22px;
@@ -840,9 +844,8 @@ textarea{
     box-shadow: 2px 0 10px rgba(192, 192, 192, 0.784);
 }
 .case-scroll-container{
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-bottom: 20px;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
 }
 .case-scroll-container::-webkit-scrollbar{
     height: 6px;
@@ -855,9 +858,11 @@ textarea{
 }
 @media screen and (max-width: 767px){
     #cases-title > h1{
+        background-color: red;
         display: block;
-        margin: -10px 20px -10px;
+        margin: -10px auto -10px;
         font-size: 18pt;
+        width: 100%;
     }
     #cases-title > h1::after{
         width: 100%;
@@ -865,12 +870,18 @@ textarea{
         height: 5px;
         margin-left: 0;
     }
+    .case-scroll-container{
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        padding-bottom: 0;
+    }
     .case-scroll-container::-webkit-scrollbar{
         display: none;
     }
     #case-category button{
         padding: 7px 20px;
-        font-size: 11pt;
+        font-size: 12pt;
     }
     #case-category{
         margin-bottom: -20px;
@@ -897,3 +908,129 @@ textarea{
     }
 }
 /*.......................................... cases end ................................... */
+
+
+/*.......................................... case details start ................................... */
+#case-detail{
+    display: block;
+    margin: 60px auto -40px;
+}
+#project-detail-title{
+    margin: 0 auto 60px;
+    text-align: center;
+}
+#project-detail-title > h1{
+    color: var(--drak-green);
+    font-size: 32pt;
+    font-weight: bold;
+}
+#project-detail-title > p{
+    display: block;
+    margin: 20px auto;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0, 0, 0, 0.705);
+    word-spacing: 1px;
+    line-height: 28px;
+    font-size: 13pt;
+    width: 70%;
+}
+#price-plans{
+    margin-top: 25px;
+    background-color: var(--purple);
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    font-size: 11pt;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#about-project{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px auto;
+}
+#about-project > div{
+    border-top: 1px solid rgba(0, 0, 0, 0.384);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+    border-left: 1px solid rgba(0, 0, 0, 0.384);
+    padding: 15px 20px;
+    width: 100%;
+}
+#about-project > div:last-child{
+    border-right: 1px solid rgba(0, 0, 0, 0.384);
+}
+#about-project > div span{
+    display: block;
+    text-transform: uppercase;
+    color: var(--drak-green);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#screens{
+    margin: 80px auto 90px;
+}
+#screens h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--drak-green);
+    margin-bottom: 30px;
+    font-size: 26pt;
+}
+#screens h2::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 50%;
+    background-color: var(--light-blue);
+    margin-top: 10px;
+}
+#screens img{
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 767px){
+    #case-detail{
+        display: block;
+        margin: 50px auto 60px;
+    }
+    #project-detail-title > h1,
+    #screens h2{
+        font-size: 21pt; 
+    }
+    #screens h2::after{
+        height: 3px;
+    }
+    #project-detail-title > p{
+        word-spacing: 1px;
+        line-height: 26px;
+        font-size: 11pt;
+        width: 100%;
+    }
+    #price-plans{
+        margin-top: 15px;
+        padding: 10px 25px;
+        font-size: 9pt;
+    }
+    #about-project{
+        display: block;
+    }
+    #about-project > div{
+        border-top: 1px solid rgba(0, 0, 0, 0.384);
+        border-bottom: 0;
+        border-left: 1px solid rgba(0, 0, 0, 0.384);
+        border-right: 1px solid rgba(0, 0, 0, 0.384);
+        padding: 15px 20px;
+        width: 100%;
+    }
+    #about-project > div:last-child{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.384);
+    }
+    #screens img{
+        margin-bottom: 40px;
+    }
+}
+/*.......................................... case details end ................................... */
