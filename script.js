@@ -78,3 +78,36 @@ var swiper = new Swiper(".mySwiper2", {
     }
   }
 });
+
+
+//....................................... ......category active link start .........................................
+document.addEventListener('DOMContentLoaded', function() {
+  const caseCategory = document.querySelector('.case-scroll-container');
+  const categoryLinks = document.querySelectorAll('.category-link button');
+
+  // Set the first button as active by default
+  if (categoryLinks.length > 0) {
+    categoryLinks[0].classList.add('active');
+  }
+
+  // Restore scroll position
+  const caseScrollX = sessionStorage.getItem('case-scroll-x');
+  if (caseScrollX !== null) {
+    caseCategory.scrollLeft = parseInt(caseScrollX, 10);
+  }
+
+  // Set active class on button click
+  categoryLinks.forEach(button => {
+    button.addEventListener('click', function(event) {
+      event.preventDefault(); // Prevent navigation for testing
+
+      // Remove active class from all buttons, add to clicked button
+      categoryLinks.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Save scroll position
+      sessionStorage.setItem('case-scroll-x', caseCategory.scrollLeft);
+    });
+  });
+});
+//................................................category active link end..... .........................................

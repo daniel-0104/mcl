@@ -664,6 +664,14 @@ textarea{
         padding-left: 20px;
         padding-bottom: 40px;
     }
+    #project-cases{
+        margin: auto 20px;
+    }
+    #project-cases .row{
+        margin-bottom: 60px !important;
+        border: 1px solid rgba(0, 0, 0, 0.384);
+        padding-bottom: 40px;
+    }
 }
 @media screen and (max-width: 575px){
     #web-case{
@@ -760,3 +768,134 @@ textarea{
     }
 }
 /*..........................................review end ................................... */
+
+/*.......................................... cases start ................................... */
+#web-cases{
+    margin: 60px auto;
+}
+#cases-title > h1{
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--drak-green);
+    font-weight: bold;
+}
+#cases-title > h1::after{
+    content: '';
+    width: 60%;
+    display: block;
+    background-color: var(--light-blue);
+    height: 5px;
+    border-radius: 50%;
+    margin-left: 20px;
+}
+#case-category{
+    margin-top: 60px;
+}
+#case-category a{
+    text-decoration: none;
+}
+#case-category button{
+    background-color: rgba(233, 233, 233, 0.856);
+    border-radius: 30px;
+    margin-right: 10px;
+    color: rgba(0, 0, 0, 0.747);
+    padding: 8px 20px;
+}
+#case-category .category-link button.active,
+#case-category button:hover{
+    background-color: var(--light-blue);
+    color: white !important;
+}
+#project-cases{
+    margin-top: 40px;
+}
+#project-cases .col-lg-4{
+    padding-left: 22px;
+    padding-top: 30px;
+}
+#project-cases h4{
+    font-weight: bold;
+}
+#project-cases h4:hover{
+    color: var(--light-blue);
+}
+#project-cases label{
+    margin-top: 6px;
+    background-color: var(--light-blue);
+    color: white;
+    padding: 4px 15px;
+    border-radius: 5px;
+    font-size: 10pt;
+}
+#project-cases .col-lg-4 p{
+    font-size: 15px;
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.777);
+}
+#project-cases .row{
+    background-color: var(--light-gray);
+    height: 100%;
+    margin-bottom: 50px;
+    box-shadow: 2px 0 10px rgba(192, 192, 192, 0.784);
+}
+.case-scroll-container{
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 20px;
+}
+.case-scroll-container::-webkit-scrollbar{
+    height: 6px;
+}
+.case-scroll-container::-webkit-scrollbar-track{
+    background-color: rgba(233, 233, 233, 0.856);
+}
+.case-scroll-container::-webkit-scrollbar-thumb{
+    background-color: var(--light-blue);
+}
+@media screen and (max-width: 767px){
+    #cases-title > h1{
+        display: block;
+        margin: -10px 20px -10px;
+        font-size: 18pt;
+    }
+    #cases-title > h1::after{
+        width: 100%;
+        margin-top: 10px;
+        height: 5px;
+        margin-left: 0;
+    }
+    .case-scroll-container::-webkit-scrollbar{
+        display: none;
+    }
+    #case-category button{
+        border-radius: 30px;
+        margin-right: 10px;
+        padding: 6px 20px;
+        font-size: 10pt;
+    }
+    #case-category{
+        margin-bottom: -20px;
+    }
+}
+@media screen and (max-width : 575px){
+    #project-cases .col-lg-4{
+        padding-left: 15px;
+        padding-top: 20px;
+    }
+    #project-cases h4{
+        font-size: 15pt;
+    }
+    #project-cases .col-lg-4 p{
+        font-size: 13px;
+    }
+    #project-cases label{
+        margin-top: 6px;
+        background-color: var(--light-blue);
+        color: white;
+        padding: 4px 15px;
+        border-radius: 5px;
+        font-size: 9pt;
+    }
+}
+/*.......................................... cases end ................................... */
