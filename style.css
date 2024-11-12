@@ -653,6 +653,9 @@ textarea{
     height: 100%;
     object-fit: cover;
 }
+#case-content .swiper-pagination{
+    display: none;
+}
 #case-content .swiper-button-next,
 #case-content .swiper-button-prev{
     background-color: var(--light-blue);
@@ -689,19 +692,20 @@ textarea{
     #web-case{
         padding: 0 !important;
     }
+    #case-content .swiper-slide .row{
+        margin-bottom: 40px;
+    }
+    #case-content .swiper-pagination{
+        display: block;
+    }
     #case-content .swiper-button-next,
     #case-content .swiper-button-prev{
-        background-color: var(--light-blue);
-        color: white;
-        width: 25px;
-        height: 25px;
-    }
-    #case-content .swiper-button-next::after,
-    #case-content .swiper-button-prev::after{
-        font-size: 11pt;
+        display: none;
     }
     #case-content > a{
-        font-size: 9pt;
+        margin-left: 20px;
+        font-size: 10pt;
+        margin-bottom: -5px;
     }
     #case-content .swiper a h4{
         font-size: 12pt;
@@ -716,11 +720,6 @@ textarea{
     #case-content .swiper .col-lg-4 label{
         margin-top: 0;
         font-size: 7pt;
-    }
-    #case-content .swiper-slide .row{
-        background-color: var(--light-gray);
-        width: 75%;
-        height: 70%;
     }
 }
 /*.......................................... web cases end ................................... */
@@ -763,7 +762,8 @@ textarea{
 #review .swiper-wrapper{
     padding-bottom: 40px;
 }
-#review .swiper-pagination-bullet-active{
+#review .swiper-pagination-bullet-active,
+#case-content .swiper-pagination-bullet-active{
     background-color: var(--light-blue);
     opacity: 1;
 }
@@ -773,6 +773,7 @@ textarea{
     }
     #review .swiper-slide p{
         font-size: 10pt;
+        margin-top: 15px;
     }
     #review > h3::after{
         width: 60%;
@@ -1016,7 +1017,7 @@ textarea{
         font-size: 21pt; 
     }
     #screens h2{
-        font-size: 19pt; 
+        font-size: 18pt; 
     }
     #screens h2::after{
         height: 3px;
