@@ -245,7 +245,7 @@ html,body{
 .plan-content span:first-child{
     font-size: 17pt;
 }
-.plan-content span:last-child{
+.plan-content #expire{
     color: rgba(248, 248, 248, 0.709);
 }
 .plan-content h2{
@@ -304,7 +304,11 @@ html,body{
     #plan-expire button{
         width: fit-content;
         font-size: 11pt;
-        padding: 2px 20px !important;
+        padding: 4px 20px !important;
+    }
+    #cash-back > p{
+        font-size: 11pt;
+        margin-bottom: -3px;
     }
 }
 
