@@ -236,7 +236,9 @@ html,body{
 }
 .plan-content{
     color: white;
-    background-image: linear-gradient(to right top, #324079, #2e3d6e, #2a3962, #283556, #26314b);
+    background-image: linear-gradient(135deg, #1e3a5f, #294a73, #3a5b87, #4b6c9b);
+
+    /* background-image: linear-gradient(to right top, #324079, #2e3d6e, #2a3962, #283556, #26314b); */
     padding: 15px 0 10px;
     border-radius: 20px;
 }
@@ -288,11 +290,11 @@ html,body{
     height: 145px;
 }
 #cash-back > p{
-    color:rgb(204, 174, 252);
+    color:rgb(223, 185, 255);
     padding: 1px;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 13px;
-    box-shadow: 3px 0 2px rgba(255, 255, 255, 0.839);
+    box-shadow: 3px 0 2px rgba(255, 255, 255, 0.928);
 }
 
 @media screen and (max-width: 470px){
