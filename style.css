@@ -299,11 +299,12 @@ html,body{
 
 @media screen and (max-width: 470px){
     #plan-expire{
-        padding: 5px 10px;
+        width: 90%;
     }
     #plan-expire button{
+        width: fit-content;
         font-size: 11pt;
-        padding: 3px 20px !important;
+        padding: 2px 20px !important;
     }
 }
 
