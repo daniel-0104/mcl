@@ -963,7 +963,7 @@ textarea{
     border-top: 1px solid rgba(0, 0, 0, 0.384);
     border-bottom: 1px solid rgba(0, 0, 0, 0.384);
     border-left: 1px solid rgba(0, 0, 0, 0.384);
-    padding: 15px 20px;
+    padding: 15px 20px 10px;
     width: 100%;
 }
 #about-project > div:last-child{
@@ -975,6 +975,9 @@ textarea{
     color: var(--drak-green);
     font-weight: bold;
     margin-bottom: 10px;
+}
+#about-project > div p{
+    color: rgba(0, 0, 0, 0.705);
 }
 
 #screens{
@@ -1009,9 +1012,11 @@ textarea{
         display: block;
         margin: 50px auto 60px;
     }
-    #project-detail-title > h1,
-    #screens h2{
+    #project-detail-title > h1{
         font-size: 21pt; 
+    }
+    #screens h2{
+        font-size: 19pt; 
     }
     #screens h2::after{
         height: 3px;
@@ -1035,8 +1040,6 @@ textarea{
         border-bottom: 0;
         border-left: 1px solid rgba(0, 0, 0, 0.384);
         border-right: 1px solid rgba(0, 0, 0, 0.384);
-        padding: 15px 20px;
-        width: 100%;
     }
     #about-project > div:last-child{
         border-bottom: 1px solid rgba(0, 0, 0, 0.384);
