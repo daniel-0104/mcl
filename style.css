@@ -1002,6 +1002,9 @@ textarea{
 }
 
 @media screen and (max-width: 767px){
+    #screens{
+        margin: 80px auto -90px;
+    }
     #case-detail{
         display: block;
         margin: 50px auto 60px;
