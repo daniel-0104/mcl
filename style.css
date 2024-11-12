@@ -867,12 +867,30 @@ textarea{
 .case-scroll-container::-webkit-scrollbar-thumb{
     background-color: var(--light-blue);
 }
+
+#new-project{
+    display: block;
+    margin: auto;
+    text-align: center;
+    background-color: var(--light-blue);
+    color: white;
+    padding: 80px 10px;
+    border-bottom: 1px solid rgba(29, 28, 28, 0.315);
+}
+#new-project > h5{
+    font-weight: bold;
+    font-size: 25pt
+}
 @media screen and (max-width: 767px){
     #cases-title > h1{
         display: block;
         margin: -10px auto -10px;
         font-size: 18pt;
         width: 100%;
+    }
+    #new-project > h5{
+        font-weight: bold;
+        font-size: 20pt
     }
     #cases-title > h1::after{
         width: 100%;
