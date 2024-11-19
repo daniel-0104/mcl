@@ -6,7 +6,7 @@ html,body{
 }
 :root{
     --light-gray: #f1f1f181;
-    --purple: #7e98ff;
+    --purple: #7b94f8;
     --drak-green: rgb(43, 57, 59);
     --light-blue: #2788ab;
 }
@@ -33,6 +33,7 @@ html,body{
 }
 .nav-link.active{
     color: var(--light-blue) !important;
+    background-color: transparent;
 }
 #nav-order > li > a{
     color: black;
@@ -42,8 +43,7 @@ html,body{
     font-family: Arial, Helvetica, sans-serif;
 }
 #nav-order > li > a:hover,
-.nav-item a i:hover,
-.nav-item button:hover{
+.navbar-nav a i:hover{
     color: var(--light-blue) !important;
 }
 .navbar-toggler{
@@ -55,10 +55,26 @@ html,body{
 .navbar-toggler:focus{
     box-shadow: none;
 }
+.dropdown-menu{
+    background-color: white;
+    color: black;
+    top: 30px !important;
+    left: -30px !important;
+}
+.dropdown-item{
+    padding-left: 15px;
+    color: black;
+}
+.dropdown-menu a:hover{
+    color: var(--light-blue)!important;
+    background-color: transparent !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item button:focus{
+    border: none;
+}
 @media screen and (max-width: 767px){
-    #nav-icon{
-        display: flex;
-    }
     .navbar-nav li{
         padding: 8px 0;
     }
@@ -67,6 +83,16 @@ html,body{
         padding-left: 20px;
         padding-top: 15px;
         margin: 10px 0;
+    }
+    .dropdown-menu{
+        background-color: white;
+        color: black;
+        top: -130px !important;
+        left: 0 !important;
+    }
+    .dropdown-item,
+    .dropdown-item button{
+        font-size: 11pt !important;
     }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
@@ -236,8 +262,7 @@ html,body{
 }
 .plan-content{
     color: white;
-    background-image: linear-gradient(135deg, #1e3a5f, #294a73, #3a5b87, #4b6c9b);
-
+    background-image: linear-gradient(135deg, #1e3a5f, #294a73, #30507c, #3b6196);
     /* background-image: linear-gradient(to right top, #324079, #2e3d6e, #2a3962, #283556, #26314b); */
     padding: 15px 0 10px;
     border-radius: 20px;
@@ -380,6 +405,12 @@ html,body{
     color: var(--drak-green);
     font-weight: bold;
 }
+.personal > h3{
+    text-transform: uppercase;
+    color: var(--drak-green);
+    font-weight: bold;
+    margin-bottom: -50px;
+}
 #service-title > p,
 #contact-us > p,
 .stand-for > p{
@@ -521,7 +552,7 @@ textarea{
     }
 }
 @media screen and (max-width: 767px){
-    #contact-content .col-lg-3{
+    #contact-content > .col-lg-3{
         border-left: none !important;
         border-bottom: 1px solid rgba(0, 0, 0, 0.154);
         padding-bottom: 30px;
@@ -1068,3 +1099,57 @@ textarea{
     }
 }
 /*.......................................... case details end ................................... */
+
+
+/*.......................................... profile start ................................... */
+.personal:nth-child(2) #contact-content{
+    margin: 80px auto !important;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.209) 0px 2px 8px;
+    border-radius: 10px;
+    padding: 15px 20px 50px;
+}
+#pass-page #contact-content{
+    width: 50%;
+    margin: 80px 0 !important;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.209) 0px 2px 8px;
+    border-radius: 10px;
+    padding: 30px 20px;
+}
+.personal{
+    margin: 60px auto 120px;
+}
+#package-detail label{
+    color: rgb(94, 92, 92);
+    font-size: 11pt;
+}
+#package-detail h6{
+    color: var(--drak-green);
+    font-size: 13pt;
+}
+@media screen and (max-width: 991px){
+    #package-detail .col-lg-3,
+    #package-detail .col-lg-6{
+        margin-bottom: 20px;
+    }
+}
+@media screen and (max-width: 767px){
+    #pass-page #contact-content{
+        width: 100%;
+    }
+    .personal > h3{
+        margin-top: -10px;
+        font-size: 15pt;
+        margin-left: 14px;
+    }
+    .personal img{
+        display: block;
+        width: 150px !important;
+        margin: auto;
+    }
+    .personal:nth-child(2) #contact-content{
+        padding: 15px 10px 20px;
+    }
+}
+/*.......................................... profile end ................................... */
