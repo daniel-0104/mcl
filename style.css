@@ -261,7 +261,7 @@ html,body{
 
 /*.......................................... price plan start ................................... */
 #price-plan{
-    margin: 40px 0 80px;
+    margin-top: 40px;
     text-align: center;
 }
 #price-plan > div > h2{
@@ -280,8 +280,8 @@ html,body{
 .plan-content span:first-child{
     font-size: 17pt;
 }
-.plan-content #expire{
-    color: rgba(248, 248, 248, 0.709);
+.plan-content .expire{
+    color: rgba(224, 223, 223, 0.74);
 }
 .plan-content h2{
     font-weight: bold;
@@ -334,6 +334,21 @@ html,body{
     margin-top: 13px;
     box-shadow: 3px 0 2px rgba(255, 255, 255, 0.928);
 }
+#service-plan{
+    background-image: linear-gradient(135deg, #1e3a5f, #294a73, #30507c, #3b6196);
+    color: rgba(255, 255, 255, 0.942);
+    padding: 70px;
+    margin-top: 40px;
+    border-bottom: 1px solid rgba(252, 252, 252, 0.716);
+}
+#service-plan p{
+    font-size: 13pt;
+}
+#service-plan span{
+    font-size: 17pt;
+    font-weight: bold;
+    color:rgb(223, 185, 255);
+}
 
 @media screen and (max-width: 470px){
     #plan-expire{
@@ -383,6 +398,16 @@ html,body{
     .plan-content h2{
         font-size: 17pt;
     }
+    #service-plan{
+        padding: 70px 0 !important;
+    }
+    #service-plan p{
+        margin-bottom: 10px !important;
+    }
+    #service-plan span{
+        font-size: 15pt;
+    }
+
 }
 @media screen and (max-width: 445px){
     #starter-plan{
