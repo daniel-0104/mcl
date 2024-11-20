@@ -1151,5 +1151,9 @@ textarea{
     .personal:nth-child(2) #contact-content{
         padding: 15px 10px 20px;
     }
+    #package-detail label{
+        color: rgb(94, 92, 92);
+        font-size: 10pt;
+    }
 }
 /*.......................................... profile end ................................... */
