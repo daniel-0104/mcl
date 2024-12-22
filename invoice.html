@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invoice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container-lg {
+            max-width: 794px;
+            margin: auto;
+        }
+        #header h1 {
+            font-size: 24pt;
+            font-weight: bold;
+            color: #2788ab;
+            text-transform: uppercase;
+        }
+        #header h2 {
+            font-size: 20pt;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .invoice-info .column p {
+            margin: 5px 0;
+        }
+        .invoice-info .column:nth-child(2) strong{
+            color: rgba(0, 0, 0, 0.74);
+            font-weight: 600;
+            margin-right: 6px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+        }
+        .table th, .table td {
+            border-bottom: 1px solid #dbd8d8;
+            padding: 8px;
+            text-align: left;
+        }
+        .amount{
+            text-align: center;
+            margin-right: -40px;
+        }
+        .amount-price{
+            display: block;
+            text-align: right;
+            padding-right: 20px;
+        }
+        .qty{
+            display: block;
+            padding-left: 10px;
+        }
+        .table th {
+            background-color: #2788ab;
+            color: white;
+        }
+        #total-price-content{
+            width: 100%;
+            border-collapse: collapse;
+        }
+        #total-price > td:last-child div{
+            padding-top: 5px;
+            padding-bottom:0;
+            border-top: 1px solid rgba(0, 0, 0, 0.161);
+            border-left: 1px solid rgba(0, 0, 0, 0.161);
+            border-right: 1px solid rgba(0, 0, 0, 0.161);
+            border-bottom: 1px solid #2788ab;
+        }
+        #balance{
+            background-color: #2788ab;
+            color: white;
+        } 
+        .balance-content{
+            padding-right: 24px;
+            text-align: right;
+            margin: 2px;
+            padding-top: 0;
+        }
+        #note{
+            margin-left: 500px;
+            font-size: 11pt;
+        }
+        #footer{
+            font-size: 11pt;
+            margin-left: -20px;
+            margin-top: 35px;
+            margin-bottom: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-lg">
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr id="header">
+                <td style="width: 50%; text-align: left;">
+                    <h1>Nanobots Ltd.</h1>
+                </td>
+                <td style="width: 50%; text-align: right;">
+                    <h2>Invoice</h2>
+                </td>
+            </tr>
+        </table>
+
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 30px; margin-top: -35px;">
+            <tr>
+                <td style="width: 50%; text-align: left; font-size: 10pt;">
+                    <p>Building 23, No.18, Uwisara Housing,</p>
+                    <p style="margin-top: -12px;">Uwisara Ward, Dagon Township, Yangon Region, Myanmar 11191</p>
+                    <p style="margin-top: -12px;">09786335921</p>
+                    <p style="margin-top: -12px;">metagroupofco@gmail.com</p>
+                </td>
+            </tr>
+        </table>
+        <table style="width: 100%; border-collapse: collapse; margin-bottom: 20px;">
+            <tr class="invoice-info">
+                <td style="width: 50%; text-align: left;">
+                    <div class="column">
+                        <p><strong>Invoice To:</strong></p>
+                        <p style="font-size: 11pt;">MEGA ACE CINEPLEX</p>
+                        <p style="font-size: 11pt; margin-top: -5px;">Myanmar Cinematic Co.Ltd</p>
+                        <p style="font-size: 11pt; margin-top: -5px;">Level 7 Times City Mall, Between Kyun Taw Rd and Pyay Rd,</p>
+                        <p style="font-size: 11pt; margin-top: -5px;">Kamayut Township, Yangon, Myanmar.</p>
+                    </div>
+                </td>
+                <td style="width: 50%; text-align: left; padding-left: 40px;">
+                    <div class="column">
+                        <p><strong>Invoice Date:</strong> December 18, 2024</p>
+                        <p><strong>Due Date:</strong> February 18, 2025</p>
+                        <p><strong>Invoice No:</strong> #MCL-0001</p>
+                        <p><strong>Subject:</strong> Business Monthly Plan</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Description</th>
+                    <th>Pricing <br> (Ks)</th>
+                    <th>Qty</th>
+                    <th><div class="amount">Amount <br> (Ks)</div></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mega Ace Cineplex - Time City</td>
+                    <td>150,000</td>
+                    <td><div class="qty">4</div></td>
+                    <td><div class="amount-price">600,000</div></td>
+                </tr>
+                <tr>
+                    <td>Mega Ace Cineplex - Kan Thar Yar</td>
+                    <td>150,000</td>
+                    <td><div class="qty">3</div></td>
+                    <td><div class="amount-price">450,000</div></td>
+                </tr>
+                <tr>
+                    <td>Mega Ace Cineplex - Super One</td>
+                    <td>150,000</td>
+                    <td><div class="qty">2</div></td>
+                    <td><div class="amount-price">300,000</div></td>
+                </tr>
+                <tr>
+                    <td>Mega Ace Cineplex - City Square</td>
+                    <td>150,000</td>
+                    <td><div class="qty">2</div></td>
+                    <td><div class="amount-price">300,000</div></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table style="width: 100% ;border-collapse: collapse; margin-bottom: -10px;">
+            <tr id="total-price">
+                <td style="width:50%; text-align: left;">
+                    <div class="right-column">
+                        <h5 style="font-size: 12pt; padding-left: 30px;">Thank You For Your Business!</h5>
+                    </div>
+                </td>
+                <td style="width: 80%;">
+                    <div>
+                        <table id="total-price-content">
+                            <tr>
+                                <td style="width: 50%;">
+                                    <span style="padding-left: 20px;">Sub Total</span>
+                                </td>
+                                <td style="width: 50%; text-align: right;">
+                                    <p class="balance-content"> 1,650,000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 50%;">
+                                    <span style="padding-left: 20px;">Discount</span>
+                                </td>
+                                <td style="width: 50%; text-align: right;">
+                                    <p class="balance-content"> 300,000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 50%;">
+                                    <span style="padding-left: 20px;">Sub Total less Discount</span>
+                                </td>
+                                <td style="width: 50%; text-align: right;">
+                                    <p class="balance-content"> 1,350,000</p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td style="width: 50%;">
+                                    <span style="padding-left: 20px;">Tax (5%)</span>
+                                </td>
+                                <td style="width: 50%; text-align: right;">
+                                    <p class="balance-content"> 67,500</p>
+                                </td>
+                            </tr>
+                            <tr id="balance">
+                                <td style="width: 50%;">
+                                    <span style="padding-left: 20px;">Total Balance (Ks)</span>
+                                </td>
+                                <td style="width: 50%; text-align: right;">
+                                    <p class="balance-content"> 1,417,500</p>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+        <div id="note">
+            <div class="right-column">
+                <p>Note: Payment due in 7 days.</p>
+            </div>
+        </div>
+
+        <div id="footer">
+            <ul>
+                <li>Please provide the bank slip as proof of payment after completing the transfer.</li>
+                <li>We would be grateful if the payment is made before the due date.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

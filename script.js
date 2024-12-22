@@ -38,6 +38,27 @@ function detailsClick(event,elementId){
   yearPlan.style.display = elementId === 'yearPlan' ? 'block' : 'none';
   ownerPlan.style.display = elementId === 'ownerPlan' ? 'block' : 'none';
 }
+
+// let detailsText = document.getElementsByClassName('text-content');
+
+// function detailsClick(event, elementId) {
+//     event.preventDefault();
+//     const clickText = event.target;
+
+//     for (let d of detailsText) {
+//         d.classList.remove('text-active');
+//     }
+//     clickText.classList.add('text-active');
+
+//     document.querySelectorAll('.plan-section').forEach(section => {
+//         section.style.display = 'none';
+//     });
+
+//     const selectedSection = document.getElementById(elementId);
+//     if (selectedSection) {
+//         selectedSection.style.display = 'block';
+//     }
+// }
 //........................................ category click end ................................
 
 

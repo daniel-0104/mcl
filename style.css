@@ -21,19 +21,36 @@ html,body{
 .navbar{
     background-color: white;
 }
-#navbarNav{
+.navbarNav{
     justify-content: right;
 }
-#login-btn{
+#login-btn,
+#dashboard{
     color: white !important;
     background-color: var(--purple);
     border-radius: 20px;
     padding: 8px 20px;
     font-size: 10pt;
 }
-.nav-link.active{
+.noti-bg{
+    background-color: var(--light-blue);
+    color: white;
+}
+.noti-btn{
+    border: 1px solid var(--light-blue);
+}
+.noti-btn:hover{
+    color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+}
+.nav-link.active,
+.nav-link.active i{
     color: var(--light-blue) !important;
     background-color: transparent;
+}
+#nav-order{
+    width: 100%;
+    justify-content: right;
 }
 #nav-order > li > a{
     color: black;
@@ -54,6 +71,9 @@ html,body{
 }
 .navbar-toggler:focus{
     box-shadow: none;
+}
+.dropdown{
+    margin-top: -5px;
 }
 .dropdown-menu{
     background-color: white;
@@ -79,36 +99,60 @@ html,body{
 .dropdown-menu form:hover{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    color: red;
 }
-.dropdown-item:focus,
+.dropdown-item button{
+    color: red;
+}
+.dropdown-menu form:focus,
+.dropdown-menu form:active,
 .dropdown-item button:focus{
     border: none;
+    background-color: transparent;
+    color: red;
+}
+#noti-btn-mb{
+    display: none;
+}
+#nav-icon #user-name{
+    cursor: pointer;
 }
 @media screen and (max-width: 767px){
     .navbar-nav li{
         padding: 8px 0;
     }
     #nav-icon{
-        border-top: 1px solid rgb(242, 240, 240);
         padding-left: 20px;
-        padding-top: 15px;
         margin: 10px 0;
     }
     .dropdown-menu{
-        background-color: white;
-        color: black;
-        top: -130px !important;
-        left: 0 !important;
+        top: 35px !important;
     }
     .dropdown-item,
     .dropdown-item button{
         font-size: 11pt !important;
+    }
+    #nav-icon #user-name{
+        display: none;
+    }
+    .noti-btn{
+        display: block;
+        margin-right: -5px !important;
+        font-size: 11pt
     }
 }
 @media screen and (min-width: 768px) and (max-width: 992px){
     #nav-order > li > a{
         margin: 0;
         padding:0 20px;
+    }
+}
+@media screen and (max-width: 343px){
+    #noti-btn-mb{
+        display: block;
+    }
+    #noti-btn-lp{
+        display: none;
     }
 }
 /*.......................................... nav bar end ................................... */
@@ -181,6 +225,11 @@ html,body{
         margin-top: 18px;
         font-size: 10pt;
     }
+    #logo-img{
+        width: 120px;
+        height: 40px;
+        margin-left: -10px;
+    }
 }
 @media screen and (max-width: 753px){
     #home-content{
@@ -198,11 +247,6 @@ html,body{
         margin-top: 5px;
         padding: 10px 20px;
         font-size: 9pt;
-    }
-    #logo-img{
-        width: 120px;
-        height: 40px;
-        margin-left: -10px;
     }
     #nav-order > li > a{
         font-size: 11pt;
@@ -303,6 +347,7 @@ html,body{
     margin: 30px auto;
     background-color: var(--purple);
     padding: 5px 10px;
+    /* padding: 6px 1px 6px 10px; */
     border-radius: 50px;
 }
 #plan-expire button{
@@ -580,6 +625,22 @@ textarea{
     color: white;
     padding: 10px 20px;
 }
+/* 
+#social-link{
+    display: flex;
+    align-items: center;
+}
+#social-link a{
+    color: black;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+#social-link a:hover{
+    color: var(--light-blue);
+    border: 1px solid var(--light-blue);
+} */
 @media screen and (max-width: 1200px){
     #contact-content .col-lg-3{
         padding-left: 18px !important; 
@@ -1165,9 +1226,13 @@ textarea{
     color: var(--drak-green);
     font-size: 13pt;
 }
+#pfp-price{
+    margin-top: -50px;
+}
 @media screen and (max-width: 991px){
     #package-detail .col-lg-3,
-    #package-detail .col-lg-6{
+    #package-detail .col-lg-6,
+    #package-detail .col-lg-4{
         margin-bottom: 20px;
     }
 }
@@ -1192,5 +1257,131 @@ textarea{
         color: rgb(94, 92, 92);
         font-size: 10pt;
     }
+    #cart-title > h3{
+        font-size: 13pt;
+    }
+    #package-detail h5{
+        font-size: 13pt;
+    }
 }
 /*.......................................... profile end ................................... */
+
+
+
+@media screen and (max-width: 991px){
+    #alert-row{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin-right: 0 !important;
+    }
+    #alert-row > div{
+        width: 300px;
+        font-size: 11pt;
+    }
+}
+
+
+#order-btn{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border: 2px solid var(--purple);
+    color: white;
+    font-weight: bold;
+    padding: 8px 50px;
+    font-size: 11pt;
+    margin-bottom: 20px;
+}
+#order-btn:hover,
+#order-btn-start:hover{
+    background-color: var(--purple);
+    border: 2px solid transparent;
+}
+#order-btn-start{
+    display: block;
+    width: fit-content;
+    margin: auto;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    border: 2px solid var(--purple);
+    color: white;
+    font-weight: bold;
+    padding: 8px 50px;
+    font-size: 11pt;
+    margin-top: 30px;
+    margin-bottom: 8px;
+}
+@media screen and (max-width: 500px){
+    #order-btn{
+        font-size: 10pt;
+    }
+}
+
+
+/*.......................................... cart start ................................... */
+#cart-page > div{
+    margin: 60px auto 100px;
+}
+#cart-title > h3{
+    text-transform: uppercase;
+    color: var(--drak-green);
+    font-weight: bold;
+}
+#cart-title label{
+    font-size: 14pt;
+    background-color: white;
+    border: 1px solid var(--light-blue);
+    padding: 2px 20px;
+    border-radius: 5px;
+    font-weight: medium;
+}
+#cart-page #contact-content{
+    margin-top: 0 !important;
+}
+.delete-btn,
+.delete-btn:hover{
+    margin-bottom: -8px;
+    background-color: white;
+    box-shadow: rgba(191, 191, 191, 0.397) 2px 0 4px;
+}
+#package-detail h5,
+#summary > h5{
+    color: var(--drak-green);
+}
+.cart-content{
+    margin-bottom: -20px;
+}
+#summary{
+    padding: 20px 30px;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+}
+@media screen and (max-width: 767px){
+    #cart-page > div{
+        margin-top: 50px;
+    }
+    #cart-title label{
+        font-size: 12pt;
+        margin-top: -5px;
+        padding: 2px 10px;
+    }
+    .delete-btn{
+        font-size: 11pt;
+    }
+    #summary > h5{
+        font-size: 14pt;
+    }
+    #summary{
+        padding: 20px;
+    }
+}
+/*.......................................... cart end ................................... */
+
+.cash-business{
+    font-size: 10pt;
+}
